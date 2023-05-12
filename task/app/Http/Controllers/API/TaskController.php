@@ -10,6 +10,10 @@ class TaskController extends Controller
 {
     public function getDataTask(Request $request){
         $tasks = Task::all();
-        return response()->json($tasks, 200);
+        return response()->json([
+            'code_status' => 200,
+            'msg_status' => 'Tasks has been loaded',
+            'data' => $tasks
+        ], 200);
     }
 }
