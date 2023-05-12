@@ -137,18 +137,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/task?taskId",
+							"raw": "{{base_url}}/task/2",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"task"
-							],
-							"query": [
-								{
-									"key": "taskId",
-									"value": null
-								}
+								"task",
+								"2"
 							]
 						}
 					},
@@ -169,19 +164,34 @@
 						},
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "task title updated",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "task description updated",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
 						"url": {
-							"raw": "{{base_url}}/task?taskId",
+							"raw": "{{base_url}}/task/4",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"task"
-							],
-							"query": [
-								{
-									"key": "taskId",
-									"value": null
-								}
+								"task",
+								"4"
 							]
 						}
 					},
@@ -203,18 +213,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/task?taskId",
+							"raw": "{{base_url}}/task/6",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"task"
-							],
-							"query": [
-								{
-									"key": "taskId",
-									"value": null
-								}
+								"task",
+								"6"
 							]
 						}
 					},

@@ -82,7 +82,7 @@ class TaskController extends Controller
         ], 200);
     }
 
-    public function updateTask($taskId, Request $request){
+    public function updateTask(Request $request, $taskId){
         try {
             //code...
             $user = auth()->userOrFail();

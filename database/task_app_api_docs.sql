@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2023 at 01:46 PM
+-- Generation Time: May 12, 2023 at 03:18 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.4
 
@@ -109,7 +109,9 @@ CREATE TABLE `tasks` (
 --
 
 INSERT INTO `tasks` (`id`, `title`, `content`, `status`) VALUES
-(1, 'Task Title', 'Task Description', '0');
+(1, 'Task Title', 'Task Description', '0'),
+(2, 'task title', 'task description', '0'),
+(4, 'task title updated', 'task description updated', '1');
 
 -- --------------------------------------------------------
 
@@ -131,7 +133,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `fullname`, `username`, `email`, `password`, `status`) VALUES
-(1, 'John Doe', 'john_doe', 'john@gmail.com', '$2y$10$DyjpUui.KcAa/E8vvn37IeBJFnHyXY8YiDdkpLAb7ODM6LA1eYz5e', '0'),
+(1, 'John Doe', 'john_doe', 'john@gmail.com', '$2y$10$DyjpUui.KcAa/E8vvn37IeBJFnHyXY8YiDdkpLAb7ODM6LA1eYz5e', '1'),
 (2, 'Test', 'test', 'test@gmail.com', '$2y$10$1Ef.RfPSwQY75346qam.7.Iig6i9w7wOX1W7mjpU5TVx9j84k2D5e', '0');
 
 --
@@ -203,7 +205,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
